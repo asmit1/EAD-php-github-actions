@@ -51,7 +51,7 @@ jobs:
           ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME} '
           
             #Now we have got the access of EC2 and we will start the deploy .
-            cd /home/ubuntu/EAD &&
+            cd /home/asmit/var/www/cicd.asmitshrestha.tk/html/EAD-php-github-actions/ &&
             git checkout main &&
             git fetch --all &&
             git reset --hard origin/main &&
